@@ -11,6 +11,10 @@ execute "Development Tools" do
   command %{yum groupinstall -y "Development Tools"}
 end
 
+package "jemalloc-devel" do
+  action :install
+end
+
 package "cmake" do
   action :install
 end
